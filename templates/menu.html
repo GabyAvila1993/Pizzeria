@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Pizzería Donatelo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Menú de Pizzas</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/menu">Menú</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="pizza">
+            <img src="{{ url_for('static', filename='pizza1.jpg') }}" alt="Pizza 1">
+            <h3>Pizza Margarita</h3>
+            <p>$5000</p>
+            <p>Una clásica pizza Margarita con salsa de tomate, mozzarella fresca y albahaca.</p>
+        </div>
+        <div class="pizza">
+            <img src="{{ url_for('static', filename='pizza2.jpg') }}" alt="Pizza 2">
+            <h3>Pizza Pepperoni</h3>
+            <p>$5500</p>
+            <p>Deliciosa pizza con rodajas de pepperoni, mozzarella y salsa de tomate.</p>
+        </div>
+        <div class="pizza">
+            <img src="{{ url_for('static', filename='pizza3.jpg') }}" alt="Pizza 3">
+            <h3>Pizza Hawaiana</h3>
+            <p>$6000</p>
+            <p>Exótica pizza con jamón, piña, mozzarella y una base de salsa de tomate.</p>
+        </div>
+        <div class="pizza">
+            <img src="{{ url_for('static', filename='pizza4.jpg') }}" alt="Pizza 4">
+            <h3>Pizza Vegetariana</h3>
+            <p>$5500</p>
+            <p>Una saludable opción con pimientos, champiñones, cebolla, tomate y mozzarella.</p>
+        </div>
+    </main>
+    <div class="order-container">
+        <a href="/pedido" class="btn">Realizar Pedido</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pizzería Donatelo - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

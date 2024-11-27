@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido - Pizzería Donatelo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Pizzería Donatelo</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/menu">Menú</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Realizar Pedido</h2>
+        <img src="{{ url_for('static', filename='ninja.png') }}" alt="Tortuga Ninja" class="turtle">
+        {% with mensajes = get_flashed_messages() %}
+        {% if mensajes %}
+            <div class="flash-message">{{ mensajes[0] }}</div>
+        {% endif %}
+        {% endwith %}
+        <form action="/pedido" method="POST" class="pedido-form">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+            <input type="text" name="direccion" placeholder="Ingrese su dirección" required>
+            <input type="number" name="cantidad" placeholder="Ingrese la cantidad pizzas" required>
+            <input type="text" name="tipo" placeholder="Ingrese el tipo de pizza" required>
+            <input type="tel" name="telefono" placeholder="Ingrese su número de teléfono" required>
+            <button type="submit" class="btn">Realizar Pedido</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pizzería Donatelo - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

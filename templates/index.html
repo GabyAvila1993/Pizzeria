@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Pizzería Donatello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Pizzería Donatello</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/menu">Menú</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Bienvenido a Pizzería Donatello</h2>
+                <p>Disfruta de las mejores pizzas al estilo de las Tortugas Ninja</p>
+            </div>
+            <img src="{{ url_for('static', filename='ninja.png') }}" alt="Tortuga Ninja" class="turtle">
+            <div class="btn-container">
+                <a href="/menu" class="btn">Ver Menú</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pizzería Donatello - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

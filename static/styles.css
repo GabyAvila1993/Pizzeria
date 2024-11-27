@@ -1,0 +1,188 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1dcb7;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position:initia
+}
+
+/* Estilos específicos para el menú */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pizza {
+    width: 300px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.pizza img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+.pizza img{
+    width: 100%;
+    height: auto;
+}
+.pizza h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.pizza p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.order-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffa500;
+}
+
+/* Estilos específicos para el formulario de pedidos */
+
+.pedido-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.pedido-form input[type="text"],
+.pedido-form input[type="number"],
+.pedido-form input[type="tel"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pedido-form button {
+    width: 300px;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pedido-form button:hover {
+    background-color: #ffa500;
+}
+
+.flash-message {
+    background-color: #7fff00;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.container{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1dcb7;
+    color: #111;
+    box-sizing: border-box;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.contact-item{
+    padding: 100px;
+    background-color: #333;
+    width: 250px;
+    margin: 5px;
+    border: 10px solid white;
+    color: white;
+}
+
+.ubi{
+    max-width: 20px; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
